@@ -1,0 +1,34 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "Flowiz Docs",
+  "theme": "mint",
+  "logo": {
+    "light": "https://flowiz.biz/assets/images/logo.svg",
+    "dark": "https://flowiz.biz/assets/images/logo.svg"
+  },
+  "favicon": "/favicon.png",
+  "colors": {
+    "primary": "#0D9488",
+    "light": "#ffffff",
+    "dark": "#0f172a"
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Getting Started",
+        "pages": [
+          "introduction",
+          "quickstart",
+          "pricing"
+        ]
+      },
+      {
+        "group": "Core Features",
+        "pages": [
+          "features/lead-extraction",
+          "features/agents"
+        ]
+      }
+    ]
+  }
+}
