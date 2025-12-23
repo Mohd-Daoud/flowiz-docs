@@ -1,0 +1,56 @@
+---
+title: Visual Canvas Builder
+description: "Edit, visualize, and optimize your automation flows using the drag-and-drop canvas."
+---
+
+Once a Flow is generated, it opens in the **Visual Canvas**. This is your workspace for fine-tuning the campaign.
+
+## The Interface
+
+The canvas represents your campaign timeline from left to right.
+* **Nodes:** The boxes representing actions (e.g., "Send Email").
+* **Edges:** The lines connecting the nodes, representing the path of the lead.
+
+{/* ## IMAGE - ADD FULL CANVAS SCREENSHOT ## */}
+{/* Save as 'full-canvas-view.png' */}
+<img
+  className="block"
+  src="/images/full-canvas-view.png"
+  alt="Flowiz Visual Canvas"
+/>
+
+## Understanding Nodes
+
+There are four main types of nodes you will see on the canvas:
+
+<CardGroup cols={2}>
+  <Card title="Trigger Node" icon="play">
+    The starting point. Usually "New Lead Added" or "Audience Upload".
+  </Card>
+  <Card title="Action Node" icon="bolt">
+    Performs a task. Examples: **Send Email**, **WhatsApp Message**.
+  </Card>
+  <Card title="Logic Node" icon="code-branch">
+    Diamond-shaped boxes that make decisions (e.g., "Did they reply?").
+  </Card>
+  <Card title="Delay Node" icon="clock">
+    Pauses the flow. Example: "Wait 24 Hours".
+  </Card>
+</CardGroup>
+
+## Editing a Flow
+
+To change settings, simply **click on any node**. A configuration panel will slide out from the right side of the screen.
+
+{/* ## IMAGE - ADD SETTINGS PANEL SCREENSHOT ## */}
+{/* Save as 'node-settings-panel.png' */}
+<img
+  className="h-64"
+  src="/images/node-settings-panel.png"
+  alt="Node Configuration Panel"
+/>
+
+### Common Actions
+* **Edit Content:** Click an Email node to change the Subject Line or Body text.
+* **Delete Step:** Click the trash icon on a node to remove it.
+* **Reconnect:** Click and drag from the circle on one node to the circle on another to create a new path.

@@ -1,0 +1,39 @@
+---
+title: WhatsApp Agent Setup
+description: "Connect your WhatsApp number for high-engagement instant messaging."
+---
+
+The **WhatsApp Agent** allows you to send automated messages directly to your lead's phone. Unlike email, WhatsApp has open rates as high as 98%.
+
+## Connection Method
+
+Flowiz uses a "Web Session" connection. You do not need the expensive official WhatsApp API; you can use your existing phone number.
+
+{/* ## IMAGE - WHATSAPP QR CODE ## */}
+{/* Save as 'whatsapp-qr.png' */}
+<img
+  className="h-64"
+  src="/images/whatsapp-qr.png"
+  alt="WhatsApp QR Connection"
+/>
+
+### How to Connect
+1.  Toggle the **WhatsApp Agent** switch to **ON**.
+2.  Wait for the **QR Code** to generate.
+3.  Open WhatsApp on your phone -> Settings -> **Linked Devices**.
+4.  Scan the code on the screen.
+
+## Session Management
+
+Once connected, your "Status" will change to **Active**.
+
+<Note>
+  **Keep your phone charged:** Since this uses a web session, your phone must have an active internet connection for messages to send.
+</Note>
+
+## Safety Limits
+
+To avoid being banned by WhatsApp:
+* **Warm-up:** Start with 10-20 messages/day.
+* **Delays:** Use the "Delay Node" to wait at least 2 minutes between messages.
+* **Replies:** If a user replies "Stop", the Agent will automatically blacklist them.

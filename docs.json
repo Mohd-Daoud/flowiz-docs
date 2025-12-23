@@ -19,14 +19,41 @@
         "pages": [
           "introduction",
           "quickstart",
+          "getting-started/core-concepts",
           "pricing"
         ]
       },
       {
-        "group": "Core Features",
+        "group": "The Automation Engine",
         "pages": [
-          "features/lead-extraction",
-          "features/agents"
+          "automations/understanding-recipes",
+          "automations/ai-flow-prompt",
+          "automations/visual-canvas-builder",
+          "automations/logic-and-delays"
+        ]
+      },
+      {
+        "group": "Agents Configuration",
+        "pages": [
+          "agents/email-agent-setup",
+          "agents/whatsapp-agent-setup",
+          "agents/webbot-installation",
+          "agents/call-agent-beta"
+        ]
+      },
+      {
+        "group": "Lead Management",
+        "pages": [
+          "leads/importing-csv-excel",
+          "leads/google-maps-extraction",
+          "leads/audience-management"
+        ]
+      },
+      {
+        "group": "Inbox & Analytics",
+        "pages": [
+          "operations/unified-inbox",
+          "operations/campaign-metrics"
         ]
       }
     ]
