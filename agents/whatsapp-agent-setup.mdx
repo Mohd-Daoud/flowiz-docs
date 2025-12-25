@@ -9,60 +9,39 @@ The **WhatsApp Agent** uses the official **Meta Cloud API**. This ensures high d
 
 To enable WhatsApp, you must authorize Flowiz to access your Meta Business Manager.
 
-1.  Go to the **Agents** tab and click the **Settings (Gear)** icon next to WhatsApp.
-2.  Click the blue **Connect Meta** button.
-3.  You will be redirected to the **Templates** page.
+**Step 1:** Go to the **Agents** tab and click the **Settings (Gear)** icon next to WhatsApp.
 
-{/* ## IMAGE - AGENT CONNECT BUTTON ## */}
-<img
-  className="block dark:hidden"
-  src="/images/whatsapp-agent-connect-light.png"
-  alt="Agent Connect Button Light"
-/>
-<img
-  className="hidden dark:block"
-  src="/images/whatsapp-agent-connect-dark.png"
-  alt="Agent Connect Button Dark"
-/>
+**Step 2:** Click the blue **Connect Meta** button.
+
+**Step 3:** You will be redirected to the **Templates** page.
+
+<img className="block dark:hidden" src="/images/whatsapp-agent-connect-light.png" alt="Agent Connect Light" />
+<img className="hidden dark:block" src="/images/whatsapp-agent-connect-dark.png" alt="Agent Connect Dark" />
 
 ### Authorizing the App
+
 On the Templates page, click the **Connect Meta** button (top right). A popup will appear asking you to log in to Facebook and select your Business Account.
 
-{/* ## IMAGE - TEMPLATES PAGE CONNECT ## */}
-<img
-  className="block dark:hidden"
-  src="/images/whatsapp-templates-connect-light.png"
-  alt="Templates Page Connect Light"
-/>
-<img
-  className="hidden dark:block"
-  src="/images/whatsapp-templates-connect-dark.png"
-  alt="Templates Page Connect Dark"
-/>
+<img className="block dark:hidden" src="/images/whatsapp-templates-connect-light.png" alt="Templates Connect Light" />
+<img className="hidden dark:block" src="/images/whatsapp-templates-connect-dark.png" alt="Templates Connect Dark" />
 
 ## 2. Creating Message Templates
 
 WhatsApp requires all initial messages to be pre-approved "Templates". You cannot send random text to a new lead.
 
-1.  Click the pink **+ Add New Template** button.
-2.  A form will slide out from the right side.
-3.  **Fill in the details:**
-    * **Category:** Choose "Marketing" (for offers) or "Utility" (for updates).
-    * **Body:** Write your message content (e.g., *"Hi {{name}}, here is your offer..."*).
-    * **Buttons:** Add a "Quick Reply" or "Call to Action" button.
-4.  Click **Submit**.
+**1. Add Template:** Click the pink **+ Add New Template** button.
 
-{/* ## IMAGE - CREATE TEMPLATE FORM ## */}
-<img
-  className="block dark:hidden"
-  src="/images/whatsapp-create-form-light.png"
-  alt="Create Template Form Light"
-/>
-<img
-  className="hidden dark:block"
-  src="/images/whatsapp-create-form-dark.png"
-  alt="Create Template Form Dark"
-/>
+**2. Open Form:** A form will slide out from the right side.
+
+**3. Fill Details:**
+* **Category:** Choose "Marketing" or "Utility".
+* **Body:** Write your message content (e.g., `Hi {{name}}...`).
+* **Buttons:** Add a "Quick Reply" or "Call to Action".
+
+**4. Submit:** Click **Submit**.
+
+<img className="block dark:hidden" src="/images/whatsapp-create-form-light.png" alt="Create Template Form Light" />
+<img className="hidden dark:block" src="/images/whatsapp-create-form-dark.png" alt="Create Template Form Dark" />
 
 ## 3. Approval & Testing
 
@@ -70,21 +49,12 @@ Once submitted, Meta will review your template (usually within minutes).
 
 Check the **Status** column in the Templates table:
 * **PENDING:** Meta is reviewing it.
-* **APPROVED:** You can now use this template in your Automations.
+* **APPROVED:** You can now use this template.
 * **REJECTED:** Check the error and try again.
 
-{/* ## IMAGE - APPROVED TABLE ## */}
-<img
-  className="block dark:hidden"
-  src="/images/whatsapp-approved-table-light.png"
-  alt="Approved Template Table Light"
-/>
-<img
-  className="hidden dark:block"
-  src="/images/whatsapp-approved-table-dark.png"
-  alt="Approved Template Table Dark"
-/>
+<img className="block dark:hidden" src="/images/whatsapp-approved-table-light.png" alt="Approved Table Light" />
+<img className="hidden dark:block" src="/images/whatsapp-approved-table-dark.png" alt="Approved Table Dark" />
 
 <Tip>
-  **Test It:** Click the purple **Send** button in the Action column to send a test message to your own number and verify it looks correct.
+  **Test It:** Click the purple **Send** button in the Action column to send a test message to your own number.
 </Tip>

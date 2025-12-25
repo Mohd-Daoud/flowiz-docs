@@ -5,29 +5,40 @@ description: "Embed the AI chat widget on your website to capture inbound leads.
 
 The **WebBot** is a defensive agent. While other agents go *out* to find leads, the WebBot waits on your site to answer questions from visitors 24/7.
 
-## Installation
+## 1. Configuration
 
-To add the widget to your site, you need to copy the installation script.
+Before you can install the bot, you must customize its appearance and behavior.
 
-1.  Click the **Settings (Gear)** icon next to **WebBot**.
-2.  Copy the code snippet provided in the "Installation" tab.
+**Step 1:** Click the **Settings (Gear)** icon next to **WebBot**.
 
-{/* ## IMAGE - WEBBOT SCRIPT ## */}
-{/* Save as 'webbot-script.png' */}
-<img
-  className="block"
-  src="/images/webbot-script.png"
-  alt="WebBot Installation Script"
-/>
+**Step 2:** Fill in the **Configuration Form**:
+* **Agent Name:** The name visitors will see (e.g., "Support Assistant").
+* **Agent Position:** Choose where the chat bubble sits (Bottom Right is standard).
+* **Greeting Message:** The first thing the bot says (e.g., "Hi! How can I help?").
+* **Agent Color:** Match this to your brand's color code.
 
-### Where to Paste
-Paste the code into the `<head>` section of your website's HTML.
+<img className="block dark:hidden" src="/images/webbot-config-light.png" alt="WebBot Config Light" />
+<img className="hidden dark:block" src="/images/webbot-config-dark.png" alt="WebBot Config Dark" />
+
+## 2. Generating the Script
+
+The installation code is hidden until you save your settings.
+
+**Step 1:** Click the purple **Save** button at the bottom right.
+
+**Step 2:** Scroll down to the newly visible **Embed Codes** section.
+
+**Step 3:** Copy the **JavaScript Code** from the gray box.
+
+<img className="block dark:hidden" src="/images/webbot-script-light.png" alt="WebBot Script Light" />
+<img className="hidden dark:block" src="/images/webbot-script-dark.png" alt="WebBot Script Dark" />
+
+## 3. Installation
+
+To make the bot appear on your site, paste the code into your website's HTML source.
+
+**Where to Paste:**
+Paste the code inside the `<head>` or `<body>` tags of your website.
 
 * **WordPress:** Use a plugin like "Insert Headers and Footers".
-* **Custom Site:** Paste it before the closing `</head>` tag in `index.html`.
-
-## Training the Bot
-
-You can upload documents to train the bot on your business.
-* **Upload PDF:** Upload your pricing guide or brochure.
-* **Website URL:** Enter your website link, and the bot will read your pages to learn about you.
+* **Custom Site:** Paste it into your `index.html` file.
