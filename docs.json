@@ -3,8 +3,8 @@
   "name": "Flowiz Docs",
   "theme": "mint",
   "logo": {
-    "light": "/images/Flowiz-logo-light.png",
-    "dark": "/images/Flowiz-logo-dark.png"
+    "light": "/images/flowiz-logo-light.png",
+    "dark": "/images/flowiz-logo-dark.png"
   },
   "favicon": "/favicon.png",
   "colors": {
