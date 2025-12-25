@@ -1,39 +1,90 @@
 ---
 title: WhatsApp Agent Setup
-description: "Connect your WhatsApp number for high-engagement instant messaging."
+description: "Connect your Meta Business Account and manage message templates."
 ---
 
-The **WhatsApp Agent** allows you to send automated messages directly to your lead's phone. Unlike email, WhatsApp has open rates as high as 98%.
+The **WhatsApp Agent** uses the official **Meta Cloud API**. This ensures high deliverability and protects your number from getting banned.
 
-## Connection Method
+## 1. Connecting to Meta
 
-Flowiz uses a "Web Session" connection. You do not need the expensive official WhatsApp API; you can use your existing phone number.
+To enable WhatsApp, you must authorize Flowiz to access your Meta Business Manager.
 
-{/* ## IMAGE - WHATSAPP QR CODE ## */}
-{/* Save as 'whatsapp-qr.png' */}
+1.  Go to the **Agents** tab and click the **Settings (Gear)** icon next to WhatsApp.
+2.  Click the blue **Connect Meta** button.
+3.  You will be redirected to the **Templates** page.
+
+{/* ## IMAGE - AGENT CONNECT BUTTON ## */}
 <img
-  className="h-64"
-  src="/images/whatsapp-qr.png"
-  alt="WhatsApp QR Connection"
+  className="block dark:hidden"
+  src="/images/whatsapp-agent-connect-light.png"
+  alt="Agent Connect Button Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/whatsapp-agent-connect-dark.png"
+  alt="Agent Connect Button Dark"
 />
 
-### How to Connect
-1.  Toggle the **WhatsApp Agent** switch to **ON**.
-2.  Wait for the **QR Code** to generate.
-3.  Open WhatsApp on your phone -> Settings -> **Linked Devices**.
-4.  Scan the code on the screen.
+### Authorizing the App
+On the Templates page, click the **Connect Meta** button (top right). A popup will appear asking you to log in to Facebook and select your Business Account.
 
-## Session Management
+{/* ## IMAGE - TEMPLATES PAGE CONNECT ## */}
+<img
+  className="block dark:hidden"
+  src="/images/whatsapp-templates-connect-light.png"
+  alt="Templates Page Connect Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/whatsapp-templates-connect-dark.png"
+  alt="Templates Page Connect Dark"
+/>
 
-Once connected, your "Status" will change to **Active**.
+## 2. Creating Message Templates
 
-<Note>
-  **Keep your phone charged:** Since this uses a web session, your phone must have an active internet connection for messages to send.
-</Note>
+WhatsApp requires all initial messages to be pre-approved "Templates". You cannot send random text to a new lead.
 
-## Safety Limits
+1.  Click the pink **+ Add New Template** button.
+2.  A form will slide out from the right side.
+3.  **Fill in the details:**
+    * **Category:** Choose "Marketing" (for offers) or "Utility" (for updates).
+    * **Body:** Write your message content (e.g., *"Hi {{name}}, here is your offer..."*).
+    * **Buttons:** Add a "Quick Reply" or "Call to Action" button.
+4.  Click **Submit**.
 
-To avoid being banned by WhatsApp:
-* **Warm-up:** Start with 10-20 messages/day.
-* **Delays:** Use the "Delay Node" to wait at least 2 minutes between messages.
-* **Replies:** If a user replies "Stop", the Agent will automatically blacklist them.
+{/* ## IMAGE - CREATE TEMPLATE FORM ## */}
+<img
+  className="block dark:hidden"
+  src="/images/whatsapp-create-form-light.png"
+  alt="Create Template Form Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/whatsapp-create-form-dark.png"
+  alt="Create Template Form Dark"
+/>
+
+## 3. Approval & Testing
+
+Once submitted, Meta will review your template (usually within minutes).
+
+Check the **Status** column in the Templates table:
+* **PENDING:** Meta is reviewing it.
+* **APPROVED:** You can now use this template in your Automations.
+* **REJECTED:** Check the error and try again.
+
+{/* ## IMAGE - APPROVED TABLE ## */}
+<img
+  className="block dark:hidden"
+  src="/images/whatsapp-approved-table-light.png"
+  alt="Approved Template Table Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/whatsapp-approved-table-dark.png"
+  alt="Approved Template Table Dark"
+/>
+
+<Tip>
+  **Test It:** Click the purple **Send** button in the Action column to send a test message to your own number and verify it looks correct.
+</Tip>
