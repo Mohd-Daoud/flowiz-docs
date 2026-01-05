@@ -1,43 +1,20 @@
 ---
 title: Core Concepts
-description: "Understand the three pillars of Flowiz: Agents, Recipes, and Flows."
+description: "Understand the five building blocks of Flowiz: Recipes, Agents, Flows, Leads, and Templates."
 ---
 
-To use Flowiz effectively, you need to understand three main terms. Think of Flowiz like a digital agency:
+To use Flowiz effectively, you need to understand five main terms. Think of Flowiz like a digital agency:
 
-1.  **Agents** are your workers.
-2.  **Recipes** are the instruction manuals.
+1.  **Recipes** are the instruction manuals.
+2.  **Agents** are your workers.
 3.  **Flows** are the active jobs.
+4.  **Leads** are the customers.
+5.  **Templates** are the approved scripts.
 
-## 1. AI Agents
-
-Agents are specialized bots designed to handle specific communication channels. You don't write scripts for them; you just turn them on and give them a personality.
-
-{/* ## IMAGE - ADD AGENTS LIST SCREENSHOT HERE ## */}
-{/* Save screenshot as 'agents-list.png' in images folder */}
-<img
-  className="block dark:hidden"
-  src="/images/agents-list-light.png"
-  alt="Agents List Light"
-/>
-<img
-  className="hidden dark:block"
-  src="/images/agents-list-dark.png"
-  alt="Agents List Dark"
-/>
-
-| Agent Type | Function | Best For |
-| :--- | :--- | :--- |
-| **Email Agent** | Sends cold emails, follow-ups, and manages replies. | B2B Sales, Newsletters |
-| **WhatsApp Agent** | Sends instant messages and handles 24/7 chat. | High-response offers |
-| **WebBot** | sits on your website to answer visitor questions. | Inbound Support |
-
-## 2. Recipes
+## 1. Recipes
 
 A **Recipe** is a pre-built template for a campaign. Instead of building a workflow from scratch, you select a Recipe that matches your goal.
 
-{/* ## IMAGE - ADD RECIPES POPUP SCREENSHOT HERE ## */}
-{/* Save screenshot as 'recipes-popup.png' in images folder */}
 <img
   className="block dark:hidden"
   src="/images/recipes-popup-light.png"
@@ -53,12 +30,82 @@ Common Recipes include:
 * **Cold Email Outreach:** Extract leads from Excel -> Send Email -> Wait 2 days -> Follow up.
 * **WhatsApp Blaster:** Extract from Google Maps -> Verify Phone -> Send WhatsApp Message.
 
+## 2. AI Agents
+
+Agents are specialized bots designed to handle specific communication channels. You don't write scripts for them; you just turn them on and give them a personality.
+
+<img
+  className="block dark:hidden"
+  src="/images/agents-list-light.png"
+  alt="Agents List Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/agents-list-dark.png"
+  alt="Agents List Dark"
+/>
+
+| Agent Type | Function | Best For |
+| :--- | :--- | :--- |
+| **Email Agent** | Sends cold emails, follow-ups, and manages replies. | B2B Sales, Newsletters |
+| **WhatsApp Agent** | Sends instant messages and handles 24/7 chat. | High-response offers |
+| **WebBot** | Sits on your website to answer visitor questions. | Inbound Support |
+
 ## 3. Flows
 
 A **Flow** is a live automation. Once you select a Recipe and click "Automate", it becomes a Flow.
 
-You can visualize a Flow as a series of connected steps on a canvas.
+You can visualize a Flow as a series of connected steps on a canvas. It contains the logic, such as delays (e.g., *"Wait 2 Days"*) and conditions (e.g., *"If user replies, stop"*).
+
+<img
+  className="block dark:hidden"
+  src="/images/flows-overview-light.png"
+  alt="Flows Overview Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/flows-overview-dark.png"
+  alt="Flows Overview Dark"
+/>
+
+## 4. Leads
+
+**Leads** are the people your Agents talk to. They are stored in your central database.
+
+* **Sources:** You can add leads by importing a CSV file or by extracting them from Google Maps.
+* **Audiences:** You can group leads into "Audiences" (e.g., "VIP Clients" vs. "Cold Prospects") to target them with different campaigns.
+
+<img
+  className="block dark:hidden"
+  src="/images/audience-cards-light.png"
+  alt="Leads Table Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/audience-cards-dark.png"
+  alt="Leads Table Dark"
+/>
+
+## 5. Templates
+
+**Templates** are pre-written message structures, primarily used for **WhatsApp**.
+
+Because WhatsApp prevents spam, you cannot send a random message to a new contact. You must use a pre-approved **Template**.
+
+<img
+  className="block dark:hidden"
+  src="/images/whatsapp-approved-table-light.png"
+  alt="Templates List Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/whatsapp-approved-table-dark.png"
+  alt="Templates List Dark"
+/>
+
+* **Marketing Templates:** Used for offers and promotions.
+* **Utility Templates:** Used for updates and alerts.
 
 <Note>
-  **Pro Tip:** You can pause, edit, or delete Flows at any time from the "Automations" tab in your dashboard.
+  **Pro Tip:** Once a lead replies to a template, the 24-hour session opens, and your AI Agent can chat freely without restrictions.
 </Note>

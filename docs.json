@@ -6,7 +6,7 @@
     "light": "/images/flowiz-logo-light.png",
     "dark": "/images/flowiz-logo-dark.png"
   },
-  "favicon": "/favicon.png",
+  "favicon": "/images/flowiz-logo.png",
   "colors": {
     "primary": "#0D9488",
     "light": "#ffffff",

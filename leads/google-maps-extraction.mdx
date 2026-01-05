@@ -1,33 +1,54 @@
 ---
 title: Google Maps Extraction
-description: "Generate fresh leads by scraping business data from Google Maps."
+description: "Generate fresh leads by scraping business data directly from Google Maps."
 ---
 
-Flowiz allows you to turn Google Maps into a database. You don't need to buy lead lists; you can generate them in real-time.
+Flowiz allows you to turn Google Maps into a live database. Instead of buying old lists, you can generate fresh leads in real-time by configuring your automation source.
 
-## How to Extract
+## How to Configure Extraction
 
-Extraction is handled via a **Recipe**.
+Follow these steps to generate leads from Google Maps inside your campaign.
 
-1.  Go to **Automations** -> **+ Add Automation**.
-2.  Select the **"Initiate WhatsApp/Email conversations with leads collected from Google Maps"** recipe.
+### 1. Access Campaign Settings
+Navigate to your active campaign or create a new one. Look for the **"My Automation Flow"** card on the left side of the screen.
 
-{/* ## IMAGE - GMAPS RECIPE CARD ## */}
-{/* Save as 'gmaps-recipe-card.png' */}
+Click the **Gear Icon (⚙️)** on this card to open the configuration menu.
+
 <img
-  className="block"
-  src="/images/gmaps-recipe-card.png"
-  alt="Google Maps Recipe"
+  className="block dark:hidden"
+  src="/images/automation-setup-light.png"
+  alt="Automation Setup Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/automation-setup-dark.png"
+  alt="Automation Setup Dark"
 />
 
-## Configuring the Search
+### 2. Select Lead Source
+A **"Business Details"** form will slide open from the right.
+1.  Locate the **Select Source of Leads** dropdown.
+2.  Choose **Google** from the list.
 
-In the Flow Prompt, you simply specify the **Business Type** and **Location**.
+### 3. Define Your Search Query
+Once "Google" is selected, a new field called **Text Query** will appear. This is where you tell the AI what to look for.
 
-> **Example Prompt:** "Find *Gyms* in *South Delhi* and extract their phone numbers."
+* **Format:** `[Business Type]` in `[Location]`
+* **Example:** "marketing agencies in Tokyo" or "Italian restaurants in New York"
 
-The system will:
-1.  Scan Google Maps for the keyword "Gym".
-2.  Filter for the location "South Delhi".
-3.  Visit each profile to find a public email address or phone number.
-4.  Add valid results to your "Leads" tab automatically.
+<img
+  className="block dark:hidden"
+  src="/images/google-source-config-light.png"
+  alt="Google Source Configuration Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/google-source-config-dark.png"
+  alt="Google Source Configuration Dark"
+/>
+
+### 4. Save and Fetch
+Click **Save**. The system will begin scanning Google Maps immediately.
+
+* **Processing Time:** It typically takes **1 to 2 minutes** to fetch and verify the data.
+* **Results:** The extracted businesses (Names, Phones, Emails) will automatically appear in your **Leads** tab, ready for your campaign.

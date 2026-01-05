@@ -1,0 +1,67 @@
+.eyebrow { color:  #a570ff; }
+
+.dark .eyebrow { color: #a570ff; }
+
+.nav-logo {
+  height: 2.8rem !important;    
+  max-height: 3.5rem !important;  
+  width: auto !important;        
+}
+
+
+
+/* =========================================
+   CUSTOM SIDEBAR ACTIVE STATE COLORS
+   ========================================= */
+
+/* 1. LIGHT MODE */
+/* We escape the slash with \/ to target 'bg-primary/10' */
+a.bg-primary\/10 {
+  background-color: rgba(165, 112, 255, 0.1) !important; 
+  color: #a570ff !important;                         
+  text-shadow: none !important;                   
+  font-weight: bold !important;
+}
+
+/* 2. DARK MODE */
+/* We escape the colon \: and slash \/ */
+.dark a.dark\:bg-primary-light\/10 {
+  background-color: rgba(198, 165, 255, 0.15) !important;
+}
+
+.dark a.dark\:text-primary-light {
+  color: #c6a5ff !important;                            
+}
+
+/* Optional: Add a subtle purple border to the left of the active item */
+a.bg-primary\/10 {
+  border-left: 3px solid #a570ff;
+  border-radius: 0 8px 8px 0; 
+}
+
+
+
+
+/* =========================================
+   8. RIGHT SIDEBAR (Table of Contents)
+   ========================================= */
+
+.toc-item a.text-primary {
+  color: #a570ff !important;          
+  border-color: #a570ff !important;    
+}
+
+.dark .toc-item a.dark\:text-primary-light {
+  color: #c6a5ff !important;            
+  border-color: #c6a5ff !important;
+}
+
+.toc-item a:hover {
+  border-color: #a570ff !important;
+  color: #a570ff !important;
+}
+
+.dark .toc-item a:hover {
+  border-color: #c6a5ff !important;
+  color: #c6a5ff !important;
+}
