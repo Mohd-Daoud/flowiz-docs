@@ -54,6 +54,14 @@
           "operations/unified-inbox",
           "operations/campaign-metrics"
         ]
+      },
+      {
+        "group": "Enable IMAP",
+        "pages": [
+          "imap/gmail",
+          "imap/outlook",
+          "imap/zoho"
+        ]
       }
     ]
   }

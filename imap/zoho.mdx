@@ -1,0 +1,48 @@
+---
+title: Zoho Mail
+description: "Configure Zoho Mail IMAP access and App Passwords."
+---
+
+Zoho Mail is popular for businesses, but it strictly separates "User Passwords" from "App Passwords."
+
+## 1. Enable IMAP Access
+
+1.  Log in to Zoho Mail.
+2.  Click the **Gear Icon** (Settings).
+3.  Go to **Mail Accounts** and find the **IMAP** section.
+4.  Ensure the **IMAP Access** checkbox is **Checked**.
+
+<img
+  className="block dark:hidden"
+  src="/images/zoho-imap-light.png"
+  alt="Zoho IMAP Settings Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/zoho-imap-dark.png"
+  alt="Zoho IMAP Settings Dark"
+/>
+
+## 2. Get App Password (Required if TFA is On)
+
+If you use Two-Factor Authentication (TFA) to log in to Zoho, Flowiz cannot use your normal password.
+
+1.  Click your profile picture -> **My Account**.
+2.  Select **Security** in the left menu.
+3.  Click **App Passwords** -> **Generate New Password**.
+4.  **App Name:** Enter `Flowiz` and copy the code.
+
+<img
+  className="block dark:hidden"
+  src="/images/zoho-app-password-light.png"
+  alt="Zoho App Password Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/zoho-app-password-light.png"
+  alt="Zoho App Password Dark"
+/>
+
+<Note>
+  **Final Step:** Paste this specific code into the Flowiz Email Agent password field.
+</Note>
