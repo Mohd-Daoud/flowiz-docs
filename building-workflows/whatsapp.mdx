@@ -1,17 +1,17 @@
 ---
 title: Building WhatsApp Workflows
-description: "Design automated WhatsApp message sequences with dynamic dynamic variables and conditional branching."
+description: "Design automated WhatsApp message sequences with dynamic variables and conditional branching."
 ---
 
 Just like with email campaigns, Flowiz allows you to build dynamic, multi-step WhatsApp automation flows. By integrating WhatsApp, you can reach your leads on their preferred platform, combining AI-driven prompts with automated follow-ups.
 
 ## 1. Accessing the WhatsApp Builder
 
-To start building, navigate to your campaign and find the WhatsApp automation card. Click the **Pencil Icon** on the workflow button to open the visual workflow canvas.
+To start building, navigate to your campaign and find the WhatsApp automation card. Click the **Edit Icon** on the workflow button to open the visual workflow canvas.
 
 ## 2. Configuring Initial WhatsApp Messages
 
-Click the **Pencil Icon** on the first WhatsApp node to open the configuration sidebar.
+Click the **Edit Icon** on the first WhatsApp node to open the configuration sidebar.
 
 <img
   className="block dark:hidden"
@@ -31,7 +31,7 @@ Similar to configuring emails (as discussed in the [Building Email Workflows](./
 
 Click **Save message** when you are done modifying your node.
 
-## 3. Handling Response Branches (Positive/Negative)
+## 3. Response Paths (Positive/Negative)
 
 Once the AI detects a reply, it uses your defined Intents to route the conversation down the appropriate path on the canvas (such as a 'Positive Reply' node or a 'Negative Reply' node). You can customize these subsequent nodes by clicking their pencil icons to tailor the follow-up message perfectly, either locking in the sale or gracefully exiting the conversation, using the identical logic we detailed in the [Building Email Workflows](./email#3-handling-replies-intent-branches) guide.
 
@@ -43,8 +43,10 @@ The timing and number of follow-ups are completely customizable, adhering to the
 
 ## 5. Saving Your Workflow
 
-When your entire flow is complete:
-1. First, make sure you save any specific node you are editing (Click **Save WhatsApp** for WhatsApp configure and **Save** for follow-up delay button).
-2. Once your entire workflow looks perfect, navigate to the top right of the screen and click **Save & Back**.
+After you have configured your initial messages, adjusted your intent branches, and customized your follow-up delays, it is time to save your progress.
 
-Clicking **Save & Back** will securely save your entire automation flow and return you to your main campaign dashboard.
+1. **Save Individual Nodes:** Make sure you save any specific node you are currently editing. Click the **Save WhatsApp** button at the bottom of the sidebar for message nodes, or the **Save** button for follow-up delay nodes.
+2. **Save Progress (Stay on Page):** While building your flow, you can periodically click the **Save** button located at the bottom middle of the canvas. This secures your entire workflow progress without leaving the builder.
+3. **Save & Exit:** Once your entire workflow looks perfect, navigate to the top right of the screen and click **Save & Back**. 
+
+Clicking **Save & Back** will securely save your complete automation flow and return you to your main campaign dashboard.

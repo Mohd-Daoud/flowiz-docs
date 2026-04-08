@@ -36,7 +36,8 @@
         "pages": [
           "building-workflows/email",
           "building-workflows/whatsapp",
-          "building-workflows/web-bot"
+          "building-workflows/web-bot",
+          "building-workflows/custom-nodes"
         ]
       },
       {
