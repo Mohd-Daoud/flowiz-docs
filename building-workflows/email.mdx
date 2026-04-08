@@ -1,0 +1,92 @@
+---
+title: Building Email Workflows
+description: "Design automated email sequences with dynamic variables and AI-driven reply routing."
+---
+
+Once your Email Agent is configured, you can build dynamic, multi-step campaigns using the Visual Workflow Builder. Flowiz allows you to map out initial emails, handle different types of replies, and trigger automatic follow-ups.
+
+## 1. Accessing the Workflow Builder
+
+To start building, navigate to your campaign and find the **My Automation Flow** card. 
+Click the **Pencil Icon** on the workflow button. 
+
+<img
+  className="block dark:hidden"
+  src="/images/workflow-card-light.png"
+  alt="Workflow Card Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/workflow-card-dark.png"
+  alt="Workflow Card Dark"
+/>
+
+This will open the visual workflow canvas where you can see the entire journey of your leads from start to finish.
+<img
+  className="block dark:hidden"
+  src="/images/email-canvas-light.png"
+  alt="Email canvas "
+/>
+<img
+  className="hidden dark:block"
+  src="/images/email-canvas-dark.png"
+  alt="Email canvas "
+/>
+## 2. Configuring the Initial Email
+
+To customize the first email your leads receive, click the **Pencil Icon** on the very first Email node. A **"Configure Email"** sidebar will slide open from the right side of your screen.
+
+<img
+  className="block dark:hidden"
+  src="/images/email-initial-config-light.png"
+  alt="Initial Email Config Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/email-initial-config-dark.png"
+  alt="Initial Email Config Dark"
+/>
+
+Here, you can personalize the message using **Dynamic Variables**:
+1. Click the **Add Variable** button or simply type `@` inside the prompt box.
+2. A dropdown will appear allowing you to select data points like `@firstName` or `@company` to ensure every email is highly personalized.
+3. Click **Save email** when you are done modifying your prompt.
+
+## 3. Handling Replies (Intent Branches)
+
+At the bottom of the configuration sidebar, you will find the **Intent** section. This is where you define exactly how the AI should categorize and route incoming replies. 
+
+The workflow automatically branches based on the lead's response:
+* **If the user responds positively**, they are routed down one path (e.g., to book a meeting).
+* **If the user responds negatively**, they are routed down another path (e.g., to politely close the loop).
+* *Note: You can also create **custom intents** based on your own specific campaign conditions.*
+
+Just like the initial email setup, you can click the **Pencil Icon** on these positive or negative response nodes to modify the AI's response. This allows you to tailor the conversation perfectly—driving the sale forward **if the user responds positively**, or gracefully exiting the conversation **if the user responds negatively**.
+
+## 4. Automated Follow-Up Sequences
+
+If a target lead does not reply to your initial email, the workflow routes them down the **Follow-up** path automatically. Click the pencil icon on a Follow-up node to configure it.
+
+<img
+  className="block dark:hidden"
+  src="/images/email-followup-config-light.png"
+  alt="Email Follow-up Config Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/email-followup-config-dark.png"
+  alt="Email Follow-up Config Dark"
+/>
+
+By default, the workflow is built to **wait 24 hours** before sending the first follow-up. If the user still does not reply, it will **wait 48 hours** before sending a second follow-up. 
+
+**Full Customization:** You are completely in control. Based on your requirements, you can modify these delay times, add or remove nodes entirely, update the messaging, and use dynamic variables here as well (like inserting `@location`) to make the follow-up feel natural and highly relevant.
+
+## 5. Saving Your Workflow
+
+After you have configured your initial emails, adjusted your intent branches, and customized your follow-up delays, it is time to save your progress.
+
+1. First, make sure you save any specific node you are editing. Click the **Save email** button at the bottom of the sidebar for email nodes, or the **Save** button for follow-up nodes.
+2. Once your entire workflow looks perfect, navigate to the top right of the screen and click **Save & Back**. 
+
+Clicking **Save & Back** will securely save your entire automation flow and return you to your main campaign dashboard.

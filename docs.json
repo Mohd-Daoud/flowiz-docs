@@ -32,6 +32,14 @@
         ]
       },
       {
+        "group": "Building Workflows",
+        "pages": [
+          "building-workflows/email",
+          "building-workflows/whatsapp",
+          "building-workflows/web-bot"
+        ]
+      },
+      {
         "group": "Agents Configuration",
         "pages": [
           "agents/email-agent-setup",

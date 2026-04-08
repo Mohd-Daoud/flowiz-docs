@@ -1,0 +1,50 @@
+---
+title: Building WhatsApp Workflows
+description: "Design automated WhatsApp message sequences with dynamic dynamic variables and conditional branching."
+---
+
+Just like with email campaigns, Flowiz allows you to build dynamic, multi-step WhatsApp automation flows. By integrating WhatsApp, you can reach your leads on their preferred platform, combining AI-driven prompts with automated follow-ups.
+
+## 1. Accessing the WhatsApp Builder
+
+To start building, navigate to your campaign and find the WhatsApp automation card. Click the **Pencil Icon** on the workflow button to open the visual workflow canvas.
+
+## 2. Configuring Initial WhatsApp Messages
+
+Click the **Pencil Icon** on the first WhatsApp node to open the configuration sidebar.
+
+<img
+  className="block dark:hidden"
+  src="/images/whatsapp-workflow-canvas-light.png"
+  alt="WhatsApp Workflow Canvas Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/whatsapp-workflow-canvas-dark.png"
+  alt="WhatsApp Workflow Canvas Dark"
+/>
+
+Similar to configuring emails (as discussed in the [Building Email Workflows](./email) guide), you can personalize your message here. 
+1. Use **Dynamic Variables** by typing `@` to inject personalized data like `@firstName` or `@company`. 
+2. Define the **AI Prompt** that the bot should use to generate the WhatsApp message.
+3. Define the **Intents** at the bottom of this sidebar to categorize lead replies. This logic works exactly the same way as the **Intent Branches** detailed in our [Building Email Workflows](./email#3-handling-replies-intent-branches) guide. 
+
+Click **Save message** when you are done modifying your node.
+
+## 3. Handling Response Branches (Positive/Negative)
+
+Once the AI detects a reply, it uses your defined Intents to route the conversation down the appropriate path on the canvas (such as a 'Positive Reply' node or a 'Negative Reply' node). You can customize these subsequent nodes by clicking their pencil icons to tailor the follow-up message perfectly, either locking in the sale or gracefully exiting the conversation, using the identical logic we detailed in the [Building Email Workflows](./email#3-handling-replies-intent-branches) guide.
+
+## 4. Setting Up Delays and Drip Follow-ups
+
+If a target lead does not respond, the workflow can route them into a simple drip campaign sequence. For example, as shown in the canvas above, you can set the workflow to send the first WhatsApp, **Wait 4 hours**, and then send a subsequent follow-up WhatsApp message. If they still don't respond, it can **Wait 1 Day** before sending another.
+
+The timing and number of follow-ups are completely customizable, adhering to the same [logic and delays](./email#4-automated-follow-up-sequences) established in our email documentation.
+
+## 5. Saving Your Workflow
+
+When your entire flow is complete:
+1. First, make sure you save any specific node you are editing (Click **Save WhatsApp** for WhatsApp configure and **Save** for follow-up delay button).
+2. Once your entire workflow looks perfect, navigate to the top right of the screen and click **Save & Back**.
+
+Clicking **Save & Back** will securely save your entire automation flow and return you to your main campaign dashboard.
